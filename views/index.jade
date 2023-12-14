@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Guarda y visita tus contactos.
+  p
+    b App con NodeJS, Express y MYSQL
+
+  div
+    form(action="/agregar", method="post")
+      input(type="text", name="nombre", placeholder="Nombre")
+      input(type="text", name="apellido", placeholder="Apellido")
+      input(type="text", name="correo", placeholder="Correo")
+      input(type="text", name="numero", placeholder="Numero")
+      button(type="submit") Agregar
+
+  div
+    h2 Lista de Usuarios
+    ul
+      each d in datos
+        div(class="usuarios")
+          li= d.nombre + ' | ' + d.apellido + ' | ' + d.correo + ' | ' + d.numero
+          div(class="btns") 
+            button(id="eliminar")
+              a(href="/eliminar/" + d.id) Eliminar
+            
+            button(id="editar")
+              a(href="/editar/" + d.id ) Editar
+
+  hr

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Guarda y visita tus contactos.
+  p
+    b App con NodeJS, Express y MYSQL
+
+  div
+    form(action="/editar/#{datos.id}/edit", id="" method="post")
+      input(type="text", id="nombre", name="nombre", placeholder="Nombre" value=datos.nombre)
+      input(type="text", id="apellido", name="apellido", placeholder="Apellido" value=datos.apellido)
+      input(type="text", id="correo", name="correo", placeholder="Correo" value=datos.correo)
+      input(type="text", id="numero", name="numero", placeholder="Numero" value=datos.numero)
+      button(type="submit", id="boton") Guardar cambios

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  ul 
+    each d in datos 
+      li 
+        span= d.nombre + ' | ' + d.apellido + ' | ' + d.correo + ' | ' + d.numero 
+        a(href='/usuarios/editar/' + d.id) Editar
+
+  
+
+  h1 HOLA QUE TAL

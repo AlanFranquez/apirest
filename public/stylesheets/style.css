@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.usuarios button {
+  background-color: rgb(243, 81, 81);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.usuarios button:hover {
+  background-color: rgb(165, 45, 45);
+}
+
+#eliminar a{
+  color: white;
+}
+
+#editar {
+  background-color: #00B7FF;
+}
+
+#editar:hover {
+  background-color: #07719b;
+}
+
+#editar a {
+  color: white;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+input {
+  margin-bottom: 10px;
+  border-radius: 0px;
+  border: 1px solid;
+  height: 40px;
+  width: 300px;
+}
+
+
+form button {
+  background-color: rgb(58, 164, 58);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+form button:hover {
+ background-color: rgb(29, 139, 29);
+}
+
